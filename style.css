@@ -1,0 +1,47 @@
+
+.assemblerbox {
+    width: 70vw;
+    height: 60vh;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    background-color: aliceblue;
+    
+    display: inline-block;
+    white-space: nowrap;
+    
+}
+
+#codes {
+    width: 20%;
+    height: 100%;
+    border-width: 1px;
+    border-color: black;
+    border-style: inset;
+    background-color:rgb(254, 245, 231);
+    display:inline-table;
+   
+    
+}
+#assemble {
+    width: 60%;
+    height: 100%;
+    border-width: 1px;
+    border-color: black;
+    border-style: inset;
+    display:inline-table;
+
+   
+}
+
+#blocks {
+    width: 20%;
+    height: 100%;
+    border-width: 1px;
+    border-color: black;
+    border-style: inset;
+    background-color:rgb(221, 169, 236);
+    display:inline-table;
+
+    
+}
