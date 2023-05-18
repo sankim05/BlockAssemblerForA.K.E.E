@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
     
 </head>
 <body>
@@ -19,12 +19,43 @@
     <div class="assemblerbox">
         <div id="codes">
 코드
+<br>
+    <span class="codebox" id="codehead">
+        <div class="number">
+순서
+
+
+        </div><div class="binary">
+명령어
+        </div><div class="hex">
+HEX
+    </div>
+    </span>
+    <br>
+    <span class="codebox" id="copypart" style="display: none;">
+        <div class="number">
+1
+
+
+        </div><div class="binary">
+0000000000000000
+        </div><div class="hex">
+0000
+    </div>
+    </span>
+    <br>
+    <div id="codeaddbutton">새로운 코드 추가</div>    
         </div><div id="assemble">
 조립하기
         </div><div id="blocks">
 명령어 블럭
     </div>
+    
     </div>
+
 </div>
+
+
+<script src="script.js"></script>
 </body>
 </html>

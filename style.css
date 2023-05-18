@@ -1,26 +1,75 @@
 
 .assemblerbox {
-    width: 70vw;
+    width: auto;
     height: 60vh;
     border-width: 1px;
     border-color: black;
     border-style: solid;
     background-color: aliceblue;
     
-    display: inline-block;
+    display: inline-flex;
     white-space: nowrap;
     
 }
+.codebox {
+    width: auto;
+    height:50px;
+    border-width: 1px;
+    border-color: black;
+    border-style: inset;
+    background-color: white;
+    display: block;
 
-#codes {
-    width: 20%;
+    white-space: nowrap;
+
+
+}
+
+.number {
+    width: 45px;
     height: 100%;
     border-width: 1px;
     border-color: black;
     border-style: inset;
-    background-color:rgb(254, 245, 231);
-    display:inline-table;
+    display:inline-block;
+    font-size:30px;
    
+}
+.binary{
+    width: auto;
+    height: 100%;
+  
+    border-width: 1px;
+    border-color: black;
+    border-style: inset;
+    display:inline-block;
+    font-size:30px;
+}
+.hex {
+    width: auto;
+    height: 100%;
+  
+    border-width: 1px;
+    border-color: black;
+    border-style: inset;
+    display:inline-block;
+    font-size:30px;
+}  
+#codes {
+    width:150%;
+
+  
+    border-width: 1px;
+    border-color: black;
+    border-style: inset;
+    background-color:rgb(254, 245, 231);
+    display:inline-flex;
+    flex-direction: column;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+   
+    height: 100%;
     
 }
 #assemble {
@@ -44,4 +93,23 @@
     display:inline-table;
 
     
+}
+#codehead{
+    display:flex;
+   justify-content: space-between;
+   
+}
+
+#codeaddbutton{
+    width: auto;
+    height:50px;
+    border-width: 1px;
+    border-color: black;
+    border-style: inset;
+    background-color: white;
+    display: inline-flex;
+
+    white-space: nowrap;
+    margin-top: 30px;
+
 }
