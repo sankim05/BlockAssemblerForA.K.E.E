@@ -79,7 +79,7 @@
     border-color: black;
     border-style: inset;
     display:inline-table;
-
+justify-content: center;
    
 }
 
@@ -103,13 +103,41 @@
 #codeaddbutton{
     width: auto;
     height:50px;
+  
+
+    display: inline-flex;
+ font-size:20px;
+    white-space: nowrap;
+    margin: 20px;
+justify-content: space-between;
+}
+
+#addit{
+    height:50px;
     border-width: 1px;
     border-color: black;
     border-style: inset;
-    background-color: white;
+    background-color: LightGreen;
     display: inline-flex;
 
-    white-space: nowrap;
-    margin-top: 30px;
+}
 
+#deleteit{
+    height:50px;
+    border-width: 1px;
+    border-color: black;
+    border-style: inset;
+    background-color: red;
+    display: inline-flex;
+
+}
+
+#codetag{
+    margin:20px;
+
+}
+
+#coderesult{
+    margin:20px;
+   
 }
