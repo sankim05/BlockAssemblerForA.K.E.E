@@ -25,6 +25,16 @@
 
 }
 
+.codebox:hover {
+
+    background-color: gainsboro;
+
+
+
+}
+
+
+
 .number {
     width: 45px;
     height: 100%;
@@ -36,7 +46,7 @@
    
 }
 .binary{
-    width: auto;
+    width: 220px;
     height: 100%;
   
     border-width: 1px;
@@ -46,7 +56,7 @@
     font-size:30px;
 }
 .hex {
-    width: auto;
+    width: 100px;
     height: 100%;
   
     border-width: 1px;
@@ -56,7 +66,7 @@
     font-size:30px;
 }  
 #codes {
-    width:150%;
+    width:auto;
 
   
     border-width: 1px;
@@ -73,7 +83,7 @@
     
 }
 #assemble {
-    width: 60%;
+    width: 800px;
     height: 100%;
     border-width: 1px;
     border-color: black;
@@ -84,14 +94,16 @@ justify-content: center;
 }
 
 #blocks {
-    width: 20%;
+    width: 400px;
     height: 100%;
     border-width: 1px;
     border-color: black;
     border-style: inset;
-    background-color:rgb(221, 169, 236);
-    display:inline-table;
-
+    background-color:gainsboro;
+    display:block;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
     
 }
 #codehead{
@@ -122,6 +134,11 @@ justify-content: space-between;
 
 }
 
+#addit:hover{
+
+    background-color: rgb(73, 218, 73);
+}
+
 #deleteit{
     height:50px;
     border-width: 1px;
@@ -130,6 +147,11 @@ justify-content: space-between;
     background-color: red;
     display: inline-flex;
 
+}
+
+#deleteit:hover{
+
+    background-color: rgb(185, 0, 0);
 }
 
 #codetag{
@@ -141,3 +163,146 @@ justify-content: space-between;
     margin:20px;
    
 }
+
+#maincode{
+    margin:20px;
+    display: flex;
+
+}
+
+#maincode span{
+    width: 50px;
+    border-width: 1px;
+    border-color: black;
+    border-style: inset;
+    background-color: white;
+}
+
+#maincode span:hover{
+    background-color: gainsboro;
+
+}
+
+.codeselecter{
+    margin:20px;
+    display: flex;
+}
+
+.firstselecter{
+    height: 50px;
+    width: 50px;
+
+    font-size: 15px;
+    white-space: normal;
+    
+    border-width: 1px;
+    border-color: black;
+    border-style: inset;
+    background-color: gold;
+
+
+}
+
+.firstselecter:hover{
+
+    background-color: rgb(219, 186, 0);
+
+}
+
+.secondselecter{
+
+    width: 305px;
+    height: 50px;
+    
+    white-space: normal;
+    
+    border-width: 1px;
+    border-color: black;
+    border-style: inset;
+    background-color: plum;
+    margin-left: 52px;
+
+}
+
+.secondselecter:hover{
+
+    background-color: rgb(188, 130, 188);
+
+}
+
+.thirdselecter{
+
+    width: 254px;
+
+    height: 50px;
+    white-space: normal;
+    
+    border-width: 1px;
+    border-color: black;
+    border-style: inset;
+    background-color:greenyellow;
+   
+
+}
+
+.thirdselecter:hover{
+
+    background-color: rgb(146, 220, 35);
+
+}
+
+.fourthselecter{
+
+    width: 150px;
+    height: 50px;
+    
+    white-space: normal;
+    
+    border-width: 1px;
+    border-color: black;
+    border-style: inset;
+    background-color:skyblue;
+   
+
+}
+
+.fourthselecter:hover{
+
+    background-color: rgb(118, 190, 219);
+
+}
+
+#selectbox1{
+
+    height: 100px;
+    width: 400px;
+    border-width: 1px;
+    display: flex;
+    border-color: black;
+    border-style: inset;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:rgb(255, 250, 220);
+
+}
+
+
+
+#selectbox2{
+
+    height: 1950px;
+    width: 400px;
+    border-width: 1px;
+    display: table;
+    border-color: black;
+    border-style: inset;
+    background-color:rgb(249, 224, 249);
+    
+}
+
+#selectbox2 div{
+
+    margin-top: 25px;
+    
+}
+

@@ -65,6 +65,36 @@ HEX
     
 </div>
 
+<div id = "maincode">
+        <span class="binarybox">0</span>
+        <span class="binarybox">0</span>
+        <span class="binarybox">0</span>
+        <span class="binarybox">0</span>
+        <span class="binarybox">0</span>
+        <span class="binarybox">0</span>
+        <span class="binarybox">0</span>
+        <span class="binarybox">0</span>
+        <span class="binarybox">0</span>
+        <span class="binarybox">0</span>
+        <span class="binarybox">0</span>
+        <span class="binarybox">0</span>
+        <span class="binarybox">0</span>
+        <span class="binarybox">0</span>
+        <span class="binarybox">0</span>
+        <span class="binarybox">0</span>
+</div>
+
+<div class="codeselecter" id = "codeselecter1" >
+        <span class="firstselecter">A값 지정(32767 최대)</span>
+        <input type="text" size="110" maxlength="5">
+</div>
+
+<div  class="codeselecter" id = "codeselecter2" style="display:none;">
+        <span class="firstselecter">명령어 사용하기</span>
+        <span class="secondselecter"> A + B </span>
+        <span class="thirdselecter"> 목적지 없음</span>
+        <span class="fourthselecter"> 점프 안함 </span>
+</div>
 
 <div id = "coderesult">
    
@@ -74,8 +104,55 @@ HEX
 
 
         </div><div id="blocks">
-명령어 블럭
+명령어 블럭<br>
 
+<br>
+
+명령어 사용 여부
+
+
+<div id="selectbox1">
+        <div class="firstselecter" id="1">A값 지정(32767 최대)</div>
+        <div class="firstselecter" id="0">명령어 사용하기</div>
+</div>
+<br>
+
+<br>
+
+실행할 명령어
+<div id="selectbox2">
+        <div class="secondselecter" id="000000">A + B</div>
+        <div class="secondselecter" id="000100">A - B</div>
+        <div class="secondselecter" id="000110">B - A</div>
+        <div class="secondselecter" id="001000">A + 1</div>
+        <div class="secondselecter" id="001100">A - 1</div>
+        <div class="secondselecter" id="001010">B + 1</div>
+        <div class="secondselecter" id="001110">B - 1</div>
+        <div class="secondselecter" id="000111">-A</div>
+        <div class="secondselecter" id="001001">-B</div>
+        <div class="secondselecter" id="001101">1</div>
+        <div class="secondselecter" id="000101">-1</div>
+        <div class="secondselecter" id="110100">0</div>
+
+
+
+        <div class="secondselecter" id="010000">A AND B</div>
+        <div class="secondselecter" id="010100">A OR B</div>
+        <div class="secondselecter" id="011000">A XOR 1</div>
+        <div class="secondselecter" id="011100">NOT A</div>
+        <div class="secondselecter" id="011110">NOT B</div>
+
+        <div class="secondselecter" id="100000">SHIFT A &gt;&gt;</div>
+        <div class="secondselecter" id="100100">SHIFT A &lt;&lt; </div>
+        <div class="secondselecter" id="100010">SHIFT B &gt;&gt;</div>
+        <div class="secondselecter" id="100110">SHIFT B &lt;&lt; </div>
+        <div class="secondselecter" id="101000">A * B</div> 
+        <div class="secondselecter" id="101100">A / B</div> 
+        <div class="secondselecter" id="101110">B / A</div> 
+
+        <div class="secondselecter" id="110000">현재 메모리 주소에 있는 메모리 값 가져오기</div> 
+
+</div>
 
 </div>
 
