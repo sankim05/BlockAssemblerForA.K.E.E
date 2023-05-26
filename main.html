@@ -4,17 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>&lt; -- AMONG US</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="icon" href="https://preview.redd.it/wgxh7o5lysa81.png?width=362&format=png&auto=webp&s=fb913b5c746a2c87a7a48750c7ea1660f397e57f">
     
 </head>
+
+
+
+
+
+
+
+
 <body>
+
+<h1>ChatGPT와 메타버스 시대를 역행하는 16비트 구식 CPU, A.K.E.E CPU</h1>
+<hr>
+<img src="https://media.contentapi.ea.com/content/dam/game-objects/plants-vs-zombies-2-game-objects/plants/akee.png.adapt.crop16x9.png" alt="">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2>개요</h2>
+<hr>
+<br>
+<br>
+
+<img src="https://drive.google.com/uc?export=view&id=19lJ7uQgBDRT6Ua7rTtgTMto4JfPylyPB" style="width: 30%; height: 30%">
+<img src="https://drive.google.com/uc?export=view&id=1WUBv3yH-8raYZre9mWCrg7UWAwF4rBTD" style="width: 10%; height: 10%">
+<span>  &lt;-- APU</span>
+<br>
+<br>
+<div style="font-size: larger;">    A.K.E.E CPU는 자작 16비트 CPU 입니다. A,B 레지스터를 포함하여 4개의 레지스터, 128KB의 RAM과 ROM을 가지고 있고, 곱셈/나눗셈 전용 회로와 자체적인 명령어 집합을 가지고 있습니다. 현재 LOGISIM을 지원하며 추후 마인크래프트 레드스톤으로도 구현할 계획입니다.</div>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<h2>제작 동기</h2>
+<hr>
+<br>
+<br>
+<img src="https://drive.google.com/uc?export=view&id=1Ro5mBOmJZNDXn-3HPWIw50iSWrJRYXEg" style="width: 30%; height: 30%">
+<br>(NandGame 플레이 화면)
+<br>
+<br>
+<div style="font-size: larger;">논리 회로 조합 게임인 NandGame을 하다가 CPU 제작 레벨을 클리어했고, 그 이후 CPU 제작이 흥미가 되어 만들었습니다. 그렇기에 ROM에서 명령어를 가지고 오는 등 전체적인 구조는 NandGame의 것과 유사합니다.</div>
+
+<br>
+<br>
+<img src="https://drive.google.com/uc?export=view&id=1BRJ1CG83sePAyRQdIH8yM0bsV-k75ePF" style="width: 15%; height: 15%">
+<img src="https://drive.google.com/uc?export=view&id=1pSEkUzW2dsQdnbG-mIOcdg3V1yKxZKt2" style="width: 15%; height: 15%">
+
+
+
+<br>(본격적으로 설계하기 전 노트에 전체적인 구조를 스케치했습니다.)
+
+
+<br>
+<br>
+<h2>작동 영상</h2>
+<hr>
+
+<iframe width="720" height="480" src="https://www.youtube.com/embed/4ltlf3ETwoM"></iframe>
+<br>
+<br>
+<br>
+(이 밑은 A.K.E.E cpu에 쓰이는 기계어를 코딩하는데 쓰이는 어셈블러가 있습니다. 현재는 html과 css 껍데기만 있지만 나중에 자바스크립트를 배우면 실제로 작동하는 어셈블러를 만들 것입니다.)
+<br>
+<br>
     <div style="text-align: center; font-family: 'Single Day', cursive; font-size: xx-large;">
-        어셈블러(자바스크립트를 사용하였습니다)
+        A.K.E.E CPU 전용 어셈블러(자바스크립트를 사용하였습니다)(미완성)
     <br>    
     <div class="assemblerbox">
         <div id="codes">
@@ -128,6 +198,8 @@ HEX
         <div class="secondselecter" id="001100">A - 1</div>
         <div class="secondselecter" id="001010">B + 1</div>
         <div class="secondselecter" id="001110">B - 1</div>
+        <div class="secondselecter" id="111000">A</div>
+        <div class="secondselecter" id="111100">B</div>
         <div class="secondselecter" id="000111">-A</div>
         <div class="secondselecter" id="001001">-B</div>
         <div class="secondselecter" id="001101">1</div>
