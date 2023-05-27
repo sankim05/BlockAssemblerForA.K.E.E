@@ -6,7 +6,8 @@
     border-color: black;
     border-style: solid;
     background-color: aliceblue;
-    
+  
+    margin-bottom: 300px;
     display: inline-flex;
     white-space: nowrap;
     
