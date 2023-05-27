@@ -182,8 +182,8 @@ HEX
 
 
 <div id="selectbox1">
-        <div class="firstselecter" id="1">A값 지정(32767 최대)</div>
-        <div class="firstselecter" id="0">명령어 사용하기</div>
+        <div class="firstselecter" id="0">A값 지정(0~32767)</div>
+        <div class="firstselecter" id="1">명령어 사용하기</div>
 </div>
 <br>
 
@@ -201,9 +201,9 @@ HEX
         <div class="secondselecter" id="111000">A</div>
         <div class="secondselecter" id="111100">B</div>
         <div class="secondselecter" id="000111">-A</div>
-        <div class="secondselecter" id="001001">-B</div>
-        <div class="secondselecter" id="001101">1</div>
-        <div class="secondselecter" id="000101">-1</div>
+        <div class="secondselecter" id="000101">-B</div>
+        <div class="secondselecter" id="001101">-1</div>
+        <div class="secondselecter" id="001011">1</div>
         <div class="secondselecter" id="110100">0</div>
 
 
@@ -230,27 +230,28 @@ HEX
 계산 결과 목적지
 <div id="selectbox3">
 <div>
-        <input type="checkbox" id="dirA">
+        <input class="amongus" type="checkbox" id="dirA" oninput="checkboxrr()">
         <span>A</span>
       </div>
  
       <div>
-        <input type="checkbox" id="dirB">
+        <input class="amongus" type="checkbox" id="dirB" oninput="checkboxrr()">
         <span>B</span>
       </div>
       <div>
-      <input type="checkbox" id="dirRam">
+      <input class="amongus" type="checkbox" id="dirRam" oninput="checkboxrr()">
       <span>RAM</span>
     </div>
     <div>
-        <input type="checkbox" id="dirRam2">
+        <input class="amongus" type="checkbox" id="dirRam2" oninput="checkboxrr()">
         <span>점프 주소 레지스터</span>
       </div>
     <div>
-      <input type="checkbox" id="dirRam2">
+      <input class="amongus" type="checkbox" id="dirRam2" oninput="checkboxrr()">
       <span>RAM 주소 레지스터</span>
     </div>
     <br>
+    <div style="font-size: 15px;">주의: ram과 ram 주소에 동시에 보낼 시 동기화 안됨</div>
     <br>
     <div>결과물:</div>
    <span class="thirdselecter" id="00000">목적지 없음</span>
