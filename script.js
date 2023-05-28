@@ -1,6 +1,38 @@
 let currentcode = "0000000000000000";
 let selectednum = 2;
 var followmodel = null;
+var overmodel = null;
+
+function copything(ishex){
+	
+	let finalstr;
+	let arry = document.getElementsByClassName("codebox");
+	if (ishex){
+		finalstr = arry[2].querySelector(".hex").innerText;
+	}else{
+		finalstr = arry[2].querySelector(".binary").innerText;
+
+	}
+
+	var i;
+	for(i=3;i<arry.length;i++){
+		if (ishex){
+
+			finalstr = finalstr + ' ' + arry[i].querySelector(".hex").innerText; 
+
+		}
+		else{
+			
+			finalstr = finalstr + '\n' + arry[i].querySelector(".binary").innerText; 
+		}
+		
+
+	}
+	window.navigator.clipboard.writeText(finalstr);
+
+
+
+}
 
 
 function changebox(){
@@ -75,12 +107,12 @@ function showthing(){
 		
 		if (document.getElementById(secondthing) != null){
 			document.getElementById("codeselecter2").querySelector(".secondselecter").innerText = document.getElementById(secondthing).innerText;
-			finalres += document.getElementById(secondthing).innerText;
+			
 		}else{
 			document.getElementById("codeselecter2").querySelector(".secondselecter").innerText = "???"
 
 		}
-
+		finalres += document.getElementById("codeselecter2").querySelector(".secondselecter").innerText;
 		let thirdthing = currentcode.substring(13,16);
 		document.getElementById("codeselecter2").querySelector(".fourthselecter").innerText = document.getElementById(thirdthing).innerText;
 		if (document.getElementById(thirdthing).innerText != "점프 안함" ){
@@ -90,6 +122,7 @@ function showthing(){
 				finalres = finalres + ', 계산 결과가 ' + document.getElementById(thirdthing).innerText + " 점프";
 			}else{
 				finalres = finalres + ", " + document.getElementById(thirdthing).innerText;
+
 			}
 		}
 
@@ -99,6 +132,7 @@ function showthing(){
 	}else{
 		document.getElementById("codeselecter1").style.display = null;
 		document.getElementById("codeselecter2").style.display = "none";
+		document.getElementById("codeselecter1").querySelector("input").value = parseInt(currentcode,2);
 		finalres = finalres + "A = " + parseInt(currentcode,2);
 
 	}
@@ -127,17 +161,61 @@ function replaceAt (input, index, character){
 
 function sussyfunc(){
 	if (followmodel!=null){
+		if(followmodel.classList.contains("firstselecter")){
+			if(currentcode.charAt(0) == "1"){
+
+				if(document.getElementById("codeselecter2").querySelector(":hover") == document.getElementById("codeselecter2").querySelector(".firstselecter")){
+					currentcode = replaceAt(currentcode,0,followmodel.id);
+					changebox();
+
+					showthing();
+				}
+
+			}
+			else{
+				if(document.getElementById("codeselecter1").querySelector(":hover") == document.getElementById("codeselecter1").querySelector(".firstselecter")){
+					currentcode = replaceAt(currentcode,0,followmodel.id);
+					changebox();
+
+					showthing();
+
+				}
+	
+			}
+
+
+		}else{
+			
+			if(document.getElementById("codeselecter2").querySelector(":hover") == document.getElementById("codeselecter2").querySelector('.'+followmodel.classList[0])){
+				
+				if(followmodel.classList[0] == "secondselecter"){
+					currentcode = currentcode.substring(0,2) + followmodel.id + currentcode.substring(8,16);
+					
+				}else if(followmodel.classList[0] == "thirdselecter"){
+					currentcode = currentcode.substring(0,8) + followmodel.id + currentcode.substring(13,16);
+				}else{
+					currentcode = currentcode.substring(0,13) + followmodel.id 
+				}
+				changebox();
+
+				showthing();	
+			}
+		}
+
+
 		followmodel.remove();
-	  
+		followmodel = null;
+		document.body.style = "user-select: auto";
 	  }
 
 
 }
 
 function blockz(itm){
+	document.body.style = "user-select: none";
 	let amogi = itm.cloneNode(true);
 	document.getElementById("idkxd").appendChild(amogi);
-	amogi.style = "position:absolute; transform:translate(-50%,-50%);"
+	amogi.style = "position:absolute; transform:translate(-50%,-50%);pointer-events: none;"
 	followmodel = amogi;
 
 }
@@ -296,3 +374,8 @@ document.getElementById("codeselecter1").querySelector("input").oninput = functi
 
 
 }
+
+document.getElementById("binarycopy").onclick = function(){ copything(false)}
+	
+
+document.getElementById("hexcopy").onclick = function(){ copything(true)}

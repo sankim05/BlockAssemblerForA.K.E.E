@@ -124,6 +124,17 @@ justify-content: center;
     margin: 20px;
 justify-content: space-between;
 }
+#copybutton{
+    width: auto;
+    height:50px;
+    
+
+    display: inline-flex;
+ font-size:20px;
+    white-space: nowrap;
+    margin: 20px;
+justify-content: space-between;
+}
 
 #addit{
     height:50px;
@@ -134,10 +145,39 @@ justify-content: space-between;
     display: inline-flex;
 
 }
+#binarycopy{
+    height:50px;
+    width: 120px;
+   
+    border-width: 1px;
+    border-color: black;
+    border-style: inset;
+    background-color: rgb(177, 196, 250);
+    display: block;
+    white-space: normal;
+
+}
+
+#hexcopy{
+    height:50px;
+    width: 120px;
+    
+    border-width: 1px;
+    border-color: black;
+    border-style: inset;
+    background-color:  rgb(177, 196, 250);
+    display: block;
+
+}
 
 #addit:hover{
 
     background-color: rgb(73, 218, 73);
+}
+
+#binarycopy:hover,#hexcopy:hover{
+
+    background-color: rgb(116, 146, 228);
 }
 
 #deleteit{
