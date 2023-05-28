@@ -86,7 +86,7 @@
 <br>
 <br>
 <br>
-    <div style="text-align: center; font-family: 'Single Day', cursive; font-size: xx-large;">
+    <div style="text-align: center;font-family: 'Single Day', cursive; font-size: xx-large;" id="idkxd" >
         A.K.E.E CPU 전용 어셈블러(자바스크립트를 사용하였습니다)(미완성) 
         <br>
         <br>
@@ -188,8 +188,8 @@ HEX
 
 
 <div id="selectbox1">
-        <div class="firstselecter" id="0">A값 지정(0 ~ 32767)</div>
-        <div class="firstselecter" id="1">명령어 사용하기</div>
+        <div class="firstselecter" id="0" onmousedown="blockz(this)">A값 지정(0 ~ 32767)</div>
+        <div class="firstselecter" id="1" onmousedown="blockz(this)">명령어 사용하기</div>
 </div>
 <br>
 
@@ -197,38 +197,38 @@ HEX
 
 실행할 명령어
 <div id="selectbox2">
-        <div class="secondselecter" id="000000">A + B</div>
-        <div class="secondselecter" id="000100">A - B</div>
-        <div class="secondselecter" id="000110">B - A</div>
-        <div class="secondselecter" id="001000">A + 1</div>
-        <div class="secondselecter" id="001100">A - 1</div>
-        <div class="secondselecter" id="001010">B + 1</div>
-        <div class="secondselecter" id="001110">B - 1</div>
-        <div class="secondselecter" id="111000">A</div>
-        <div class="secondselecter" id="111100">B</div>
-        <div class="secondselecter" id="000111">-A</div>
-        <div class="secondselecter" id="000101">-B</div>
-        <div class="secondselecter" id="001101">-1</div>
-        <div class="secondselecter" id="001011">1</div>
-        <div class="secondselecter" id="110100">0</div>
+        <div class="secondselecter" id="000000" onmousedown="blockz(this)">A + B</div>
+        <div class="secondselecter" id="000100" onmousedown="blockz(this)">A - B</div>
+        <div class="secondselecter" id="000110" onmousedown="blockz(this)">B - A</div>
+        <div class="secondselecter" id="001000" onmousedown="blockz(this)">A + 1</div>
+        <div class="secondselecter" id="001100" onmousedown="blockz(this)">A - 1</div>
+        <div class="secondselecter" id="001010" onmousedown="blockz(this)">B + 1</div>
+        <div class="secondselecter" id="001110" onmousedown="blockz(this)">B - 1</div>
+        <div class="secondselecter" id="111000" onmousedown="blockz(this)">A</div>
+        <div class="secondselecter" id="111100" onmousedown="blockz(this)">B</div>
+        <div class="secondselecter" id="000111" onmousedown="blockz(this)">-A</div>
+        <div class="secondselecter" id="000101" onmousedown="blockz(this)">-B</div>
+        <div class="secondselecter" id="001101" onmousedown="blockz(this)">-1</div>
+        <div class="secondselecter" id="001011" onmousedown="blockz(this)">1</div>
+        <div class="secondselecter" id="110100" onmousedown="blockz(this)">0</div>
 
 
 
-        <div class="secondselecter" id="010000">A AND B</div>
-        <div class="secondselecter" id="010100">A OR B</div>
-        <div class="secondselecter" id="011000">A XOR 1</div>
-        <div class="secondselecter" id="011100">NOT A</div>
-        <div class="secondselecter" id="011110">NOT B</div>
+        <div class="secondselecter" id="010000" onmousedown="blockz(this)">A AND B</div>
+        <div class="secondselecter" id="010100" onmousedown="blockz(this)">A OR B</div>
+        <div class="secondselecter" id="011000" onmousedown="blockz(this)">A XOR B</div>
+        <div class="secondselecter" id="011100" onmousedown="blockz(this)">NOT A</div>
+        <div class="secondselecter" id="011110" onmousedown="blockz(this)">NOT B</div>
 
-        <div class="secondselecter" id="100000">SHIFT A &gt;&gt;</div>
-        <div class="secondselecter" id="100100">SHIFT A &lt;&lt; </div>
-        <div class="secondselecter" id="100010">SHIFT B &gt;&gt;</div>
-        <div class="secondselecter" id="100110">SHIFT B &lt;&lt; </div>
-        <div class="secondselecter" id="101000">A * B</div> 
-        <div class="secondselecter" id="101100">A / B</div> 
-        <div class="secondselecter" id="101110">B / A</div> 
+        <div class="secondselecter" id="100000" onmousedown="blockz(this)">SHIFT A &gt;&gt;</div>
+        <div class="secondselecter" id="100100" onmousedown="blockz(this)">SHIFT A &lt;&lt; </div>
+        <div class="secondselecter" id="100010" onmousedown="blockz(this)">SHIFT B &gt;&gt;</div>
+        <div class="secondselecter" id="100110" onmousedown="blockz(this)">SHIFT B &lt;&lt; </div>
+        <div class="secondselecter" id="101000" onmousedown="blockz(this)">A * B</div> 
+        <div class="secondselecter" id="101100" onmousedown="blockz(this)">A / B</div> 
+        <div class="secondselecter" id="101110" onmousedown="blockz(this)">B / A</div> 
 
-        <div class="secondselecter" id="110000">현재 메모리 주소에 있는 메모리 값 가져오기</div> 
+        <div class="secondselecter" id="110000" onmousedown="blockz(this)">현재 메모리 주소에 있는 메모리 값 가져오기</div> 
 
 </div>
 <br>
@@ -260,7 +260,7 @@ HEX
     <div style="font-size: 15px;">주의: ram과 ram 주소에 동시에 보낼 시 동기화 안됨</div>
     <br>
     <div>결과물:</div>
-   <span class="thirdselecter" id="00000">목적지 없음</span>
+   <span class="thirdselecter" id="00000" onmousedown="blockz(this)">목적지 없음</span>
     
   
  
@@ -271,15 +271,15 @@ HEX
 <br>
 점프 조건
 <div id="selectbox4">
-        <div class="fourthselecter" id="000">점프 안함</div>
-        <div class="fourthselecter" id="100">0보다 작으면</div>
+        <div class="fourthselecter" id="000" onmousedown="blockz(this)">점프 안함</div>
+        <div class="fourthselecter" id="100" onmousedown="blockz(this)">0보다 작으면</div>
         
-        <div class="fourthselecter" id="010">0보다 크면</div>
-        <div class="fourthselecter" id="001">0이면</div>
-        <div class="fourthselecter" id="110">0이 아니면</div>
-        <div class="fourthselecter" id="101">0보다 작거나 같으면</div>
-        <div class="fourthselecter" id="011">0보다 크거나 같으면</div>
-        <div class="fourthselecter" id="111">무조건 점프</div>
+        <div class="fourthselecter" id="010" onmousedown="blockz(this)">0보다 크면</div>
+        <div class="fourthselecter" id="001" onmousedown="blockz(this)">0이면</div>
+        <div class="fourthselecter" id="110" onmousedown="blockz(this)">0이 아니면</div>
+        <div class="fourthselecter" id="101" onmousedown="blockz(this)">0보다 작거나 같으면</div>
+        <div class="fourthselecter" id="011" onmousedown="blockz(this)">0보다 크거나 같으면</div>
+        <div class="fourthselecter" id="111" onmousedown="blockz(this)">무조건 점프</div>
 </div>
 
 </div>
